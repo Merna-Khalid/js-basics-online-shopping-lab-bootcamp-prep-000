@@ -24,8 +24,12 @@ function viewCart() {
     return "Your shopping cart is empty."
   }
   var s = "In your cart, you have"
+  if(cart.length === 1) {
+    s += " " + cart[i].itemName + " at $" + cart[i].itemPrice + "."
+    return s
+  }
   for(var i = 0; i < cart.length; i++) {
-    if(i != cart.length - 1 && cart.length != 1) {
+    if(i != cart.length - 1) {
       s += " " + cart[i].itemName + " at $" + cart[i].itemPrice + ","
     }
     else {
