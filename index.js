@@ -25,7 +25,7 @@ function viewCart() {
   }
   var s = "In your cart, you have"
   if(cart.length === 1) {
-    s += " " + cart[i].itemName + " at $" + cart[i].itemPrice + "."
+    s += " " + cart[0].itemName + " at $" + cart[0].itemPrice + "."
     return s
   }
   for(var i = 0; i < cart.length; i++) {
@@ -42,10 +42,16 @@ function viewCart() {
 
 function total() {
   // write your code here
+  var totalPrice = 0
+  for(var i = 0; i < cart.length; i++) {
+    totalPrice += parseInt(cart[i].itemPrice)
+  }
+  return totalPrice
 }
 
 function removeFromCart(item) {
   // write your code here
+  
 }
 
 function placeOrder(cardNumber) {
