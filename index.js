@@ -20,6 +20,9 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  if(cart.length) {
+    for(var i = 0; i )
+  }
 }
 
 function total() {
