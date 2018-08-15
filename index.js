@@ -26,10 +26,10 @@ function viewCart() {
   var s = "In your cart, you have"
   for(var i = 0; i < cart.length; i++) {
     if(i != cart.length - 1 && cart.length != 1) {
-      s += " " + cart[i][itemName] + " at $" + cart[i][itemPrice] + ","
+      s += " " + cart[i].itemName + " at $" + cart[i].itemPrice + ","
     }
     else {
-      s += " and " + cart[i][itemName] + " at $" + cart[i][itemPrice] + "."
+      s += " and " + cart[i].itemName + " at $" + cart[i].itemPrice + "."
     }
   }
   
