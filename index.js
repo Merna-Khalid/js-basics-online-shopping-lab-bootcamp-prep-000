@@ -32,6 +32,7 @@ function viewCart() {
       s += " and " + cart[i].itemName + " at $" + cart[i].itemPrice + "."
     }
   }
+  return s
   
 }
 
